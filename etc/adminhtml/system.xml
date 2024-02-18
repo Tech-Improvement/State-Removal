@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="techimprovement" translate="label" sortOrder="10">
+            <label>TechImprovement</label>
+        </tab>
+        <section id="hidestate" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Hide US States</label>
+            <tab>techimprovement</tab>
+            <resource>TechImprovement_StateRemoval::config</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable or disable the module.</comment>
+                </field>
+                <field id="hidden_states" translate="label" type="multiselect" sortOrder="2" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                    <label>Hidden States</label>
+                    <backend_model>Magento\Framework\App\Config\Value</backend_model>
+                    <source_model>TechImprovement\StateRemoval\Model\Config\Source\States</source_model>
+                    <comment>Select states that you want to hide from the frontend.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
