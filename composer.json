@@ -10,7 +10,7 @@
         "magento/module-directory": "100.*"
     },
     "license": [
-        "Unlicensed"
+        "Unlicense"
     ],
     "autoload": {
         "files": [
