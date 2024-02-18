@@ -39,3 +39,9 @@
 <p>For any issues or questions regarding the module, please contact support at <a title="info@techimprovement.net" href="mailto:info@techimprovement.net">info@techimprovement.net</a>.</p>
 <h2><strong>Author</strong></h2>
 <p>This module is brought to you by <strong>TechImprovement Inc</strong>, a provider of Magento extensions and custom eCommerce solutions.</p>
+
+## Support Our Project
+
+<p>If you find this project helpful, consider supporting us with a donation by clicking this button <a href="https://paypal.me/AnduelHoxha?country.x=US&locale.x=en_US"><img width="150" src="Donate-button.png"></a> or scan the QR code below:</p>
+
+![Donate QR Code](qrcode.png)
